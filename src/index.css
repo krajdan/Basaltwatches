@@ -1,0 +1,24 @@
+@import "tailwindcss";
+/* Importera det lyxiga premium-typsnittet till Basalt */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap');
+
+:root {
+  /* Premium mörka färgvariabler */
+  --bg: #030712;           
+  --bg-card: #111827;      
+  --text: #94a3b8;         
+  --text-h: #f8fafc;       
+  --border: #1f2937;       
+  --accent: #38bdf8;       
+  --shadow: rgba(0, 0, 0, 0.5) 0 20px 25px -5px;
+
+  color-scheme: dark;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Skräddarsydd klass för Basalt-typsnittet (matchar urtavlan) */
+.font-basalt {
+  font-family: 'Cinzel', serif;
+}
