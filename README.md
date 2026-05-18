@@ -1,16 +1,14 @@
-# React + Vite
+# BASALT - Fullstack Watch Configurator MVP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En modern, minimalistisk e-handels- och konfigurationssida för det konceptuella klockmärket BASALT. Projektet är byggt för att demonstrera modern frontend-arkitektur och sömlös molnintegration.
 
-Currently, two official plugins are available:
+## ⚡ Funktioner
+- **Live Data Streaming:** Beskrivningar och priser hämtas i realtid från Supabase (PostgreSQL).
+- **Dynamisk Lagerhantering:** Systemet känner av varukorgens innehåll och låser köpknappen 자동으로 ("Out of Stock") när maxgränsen (3 st) har nåtts.
+- **Micro-interactions:** Varukorgen öppnas direkt vid köp och har en "auto-dismiss"-funktion via React `useRef` och `setTimeout` som stänger panelen efter 3 sekunder.
+- **Layout Stability:** Säkrad mot Layout Shifts (CLS) genom låsta komponenthöjder vid modellbyten.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- React (Vite)
+- Tailwind CSS
+- Supabase (Backend-as-a-Service)
